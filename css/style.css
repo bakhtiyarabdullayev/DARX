@@ -1,0 +1,213 @@
+header{
+    background: #1a1a1a;
+    text-align: center;
+    border-bottom: 5px solid #2096DA;
+}
+nav { 
+    display: grid;
+    grid-template-rows: 95px auto auto;
+    gap: 10px;
+}
+#logo{
+    background: #2096DA;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#menu li a {
+    display: inline-block;
+    font: 400 1.1em 'Caviar Dreams';
+    line-height: 14px;
+    color: #fff;
+    padding: 8px 1em;
+}
+
+#phone {
+    font: .8em 'Museo Sans';
+    color: #7f7c7c;
+    padding: 10px
+}
+#icons a {
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    color: #7c7c7c;
+    background: #2c2c2c;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 3px;
+}
+main { 
+    background: url('../img/mainbg.jpg');
+}
+#arts{
+    display: grid;
+    grid-template-rows: 50vh 50vh 100vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 100vh 50vh 50vh 50vh 50vh 50vh;
+    gap: 15px;
+    padding: 45px 0 125px 0;
+}
+#art1  { background: url('../img/art01.jpg') center/cover; }
+#art2  { background: url('../img/art02.jpg') center/cover; }
+#art3  { background: url('../img/art03.jpg') center/cover; }
+#art4  { background: url('../img/art04.jpg') center/cover; }
+#art5  { background: url('../img/art05.jpg') center/cover; }
+#art6  { background: url('../img/art06.jpg') center/cover; }
+#art7  { background: url('../img/art07.jpg') center/cover; }
+#art8  { background: url('../img/art08.jpg') center/cover; }
+#art9  { background: url('../img/art09.jpg') center/cover; }
+#art10 { background: url('../img/art10.jpg') center/cover; }
+#art11 { background: url('../img/art11.jpg') center/cover; }
+#art12 { background: url('../img/art12.jpg') center/cover; }
+#art13 { background: url('../img/art13.jpg') center/cover; }
+#art14 { background: url('../img/art14.jpg') center/cover; }
+#art15 { background: url('../img/art15.jpg') center/cover; }
+#art16 { background: url('../img/art16.jpg') center/cover; }
+#alt1{
+    background-color: #1a1a1c;
+}
+#alt2{
+    background-color: #2096DA;
+}
+#icons2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#icons2 a{
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    color: #7c7c7c;
+    background: #2c2c2c;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 1.5em;
+    margin-top: -5%;
+}
+#arts3 h3{
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #c5c5c5;
+    font-weight: 400;
+    font-family: "Caviar Dreams";
+}
+#arts3 div{
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    padding-bottom: 40px;
+}
+#flickr img{
+    border: 5px solid #2c2c2c;
+    height: 80px;
+    width: 80px;
+}
+#posts div{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 80px 80px;
+}
+#posts img{
+    border: 5px solid #2c2c2c;
+    height: 75px;
+    width: 80px;
+}
+#posts p{
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    color: #c5c5c5;
+    font-family: "Museo Sans";
+}
+#posts div p{
+    display: grid;
+    align-items: center;
+}
+#stayint input{
+    width: 100%;
+    border: none;
+    background-color: #2c2c2c;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+#stayint button{
+    color: #fff;
+    border: none;
+    background-color: #2c2c2c;
+    padding: 15px;
+}
+#son{
+    color: white;
+    font-family: "Museo Sans";
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+#son1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+#son p{
+    display: grid;
+    justify-content: end;
+}
+
+
+
+@media screen and (min-width:768px){
+    .container{
+        max-width: 960px;
+        margin: auto;
+    }
+    nav {
+        grid-template-columns: 130px auto;
+        grid-template-rows: 65px 30px;
+    }
+    #logo { grid-area: 1 / 1 / 3 / 2;}
+    #menu { 
+        grid-area: 2 / 2 / 3 / 3;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: end;
+    }
+    #contacts {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: end;
+    }
+    #arts {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 220px 220px 220px 220px 220px;
+    }
+    #art3 { grid-area: 1 / 3 / 3 / 4 }
+    #art10 { grid-area: 3 / 3 / 4 / 5 }
+    #art11 { grid-area: 4 / 1 / 6 / 2 }
+    #art16 { grid-area: 5 / 3 / 6 / 5 }
+    #arts div { opacity: .5 }
+    #arts div:hover { opacity: 1 }
+    #icons2 a{
+        width: 100px;
+        height: 100px;
+        font-size: 3em;
+    }
+    #arts3{
+        display: flex;
+        justify-content: space-between;
+    }
+    #flickr img{
+        border: 5px solid #2c2c2c;
+        height: 70px;
+        width: 80px;
+    }
+    #posts div p{
+        display: grid;
+        align-items: initial;
+    }
+    #stayint button{
+        float: right;
+    }
+}
